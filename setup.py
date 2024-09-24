@@ -28,9 +28,8 @@ if __name__ == "__main__":
         keywords=["machine learning"],
         install_requires=REQUIREMENTS,
         extras_require={
-            "eval": EVAL,
             "training": TRAINING,
-            "all": list(set(REQUIREMENTS + EVAL + TRAINING)),
+            "all": list(set(REQUIREMENTS + TRAINING)),
         },
         classifiers=[
             "Development Status :: 4 - Beta",
